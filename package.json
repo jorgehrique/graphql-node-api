@@ -4,7 +4,7 @@
   "description": "\"# graphql-node-api\"",
   "scripts": {
     "gulp": "node_modules/.bin/gulp",
-    "dev": "node_modules/.bin/nodemon -e ts --delay 1 --watch src/ --exec node dist/index.js",
+    "dev": "set NODE_ENV=development && nodemon -e ts --delay 1 --watch src/ --exec node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
