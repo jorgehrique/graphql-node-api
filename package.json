@@ -2,8 +2,9 @@
   "name": "graphql-node-api",
   "version": "1.0.0",
   "description": "\"# graphql-node-api\"",
-  "main": "index.js",
   "scripts": {
+    "gulp": "node_modules/.bin/gulp",
+    "dev": "node_modules/.bin/nodemon -e ts --delay 1 --watch src/ --exec node dist/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/jorgehrique/graphql-node-api/issues"
   },
-  "homepage": "https://github.com/jorgehrique/graphql-node-api#readme"
+  "homepage": "https://github.com/jorgehrique/graphql-node-api#readme",
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-clean": "0.3.2",
+    "gulp-typescript": "3.2.2",
+    "nodemon": "^1.12.0",
+    "ts-node": "^7.0.1",
+    "typescript": "2.5.3"
+  }
 }
