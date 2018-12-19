@@ -1,3 +1,20 @@
-let a:string = 'hello ';
+import * as express from 'express'
 
-console.log(a + a)
+class App {
+
+    public express: express.Application
+
+    constructor() {
+        this.express = express()
+        this.middleware()
+    }
+
+    private middleware(): void {
+
+        this.express.use('/hello', (req: express.Request, res: express.Response, next: express.NextFunction) => {
+            res.send({ hello: 'hello world' })
+        })
+    }
+}
+
+export default new App().express;
