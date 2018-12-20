@@ -22,9 +22,7 @@
     "@types/express-graphql": "^0.6.2",
     "@types/graphql": "^14.0.3",
     "@types/node": "^10.12.17",
-    "gulp": "^4.0.0",
-    "gulp-clean": "0.3.2",
-    "gulp-typescript": "3.2.2",
+    "@types/sequelize": "^4.27.33",
     "nodemon": "^1.12.0",
     "ts-node": "^7.0.1",
     "typescript": "2.5.3"
@@ -33,6 +31,8 @@
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
     "graphql": "^14.0.2",
-    "graphql-tools": "^4.0.3"
+    "graphql-tools": "^4.0.3",
+    "mysql2": "^1.6.4",
+    "sequelize": "^4.42.0"
   }
 }

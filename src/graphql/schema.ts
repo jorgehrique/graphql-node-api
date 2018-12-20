@@ -35,11 +35,14 @@ const typeDefs = `
 `;
 
 const resolvers = {
+    User: {
+        id: user => user.id * 10
+    },
     Query: {
         allUsers: () => users
     },
     Mutation: {
-        createUser: (parent, args) => {
+        createUser: (parent: any, args: any) => {
             const newUser = { id: ++users.length, ...args }
             users.push(newUser)
             return newUser
