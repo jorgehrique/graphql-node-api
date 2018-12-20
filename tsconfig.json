@@ -3,8 +3,9 @@
         "lib": [
             "esnext"
         ],
-        "target": "es6",
-        "module": "commonjs"
+        "target": "es2017",
+        "module": "commonjs",
+        "outDir": "dist"
     },
     "compileOnSave": false,
     "include": [

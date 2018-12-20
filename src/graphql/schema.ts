@@ -37,7 +37,7 @@ const typeDefs = `
 const resolvers = {
     Query: {
         allUsers: () => users
-    }
+    },
     Mutation: {
         createUser: (parent, args) => {
             const newUser = { id: ++users.length, ...args }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "\"# graphql-node-api\"",
   "scripts": {
-    "gulp": "node_modules/.bin/gulp",
+    "tsc": "tsc -w",
     "dev": "set NODE_ENV=development && nodemon -e ts --delay 1 --watch src/ --exec node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
